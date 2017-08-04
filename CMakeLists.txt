@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.2)
+
+#set(COMPONENT_NAME DesignPatterns)
+#add_subdirectory("${CMAKE_SOURCE_DIR}/${COMPONENT_NAME}/src")
+
+project(DesignPatterns)
+file(GLOB src *.cpp *.h)
+#add_executable(DesignPatterns ${src})
+add_executable(DesignPatterns src/main.cpp src/Singleton.h src/Singleton.cpp)
