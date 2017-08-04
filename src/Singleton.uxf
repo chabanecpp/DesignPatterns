@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>190</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Singleton
+--
+-uniqueInstance : Singleton
+--
++getinstance():Singleton</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>640</x>
+      <y>200</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=blue
+return uniqueInstance</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
