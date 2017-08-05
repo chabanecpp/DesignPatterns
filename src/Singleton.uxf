@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>220</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Singleton
+--
+-uniqueInstance : Singleton
+--
++getinstance():Singleton</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>500</x>
+      <y>180</y>
+      <w>420</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=blue
+
+Purpose: create one instance
+Why: centralize behavior
+
+Examples: - Settings class
+          - Logger class
+
+Pb : thread-safe resolved from c++11</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
