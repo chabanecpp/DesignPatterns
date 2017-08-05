@@ -26,10 +26,14 @@
     </coordinates>
     <panel_attributes>Note..
 bg=blue
-return uniqueInstance
 
-Intention : create one instance
-Why : centralize behavior</panel_attributes>
+Purpose: create one instance
+Why: centralize behavior
+
+Examples: - Settings class
+          - Logger class
+
+Pb : thread-safe resolved from c++11</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
