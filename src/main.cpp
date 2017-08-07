@@ -1,4 +1,5 @@
 #include "Singleton.h"
+#include "Factory.h"
 
 #include <iostream>
 #include <thread>
@@ -15,13 +16,17 @@ void func2()
 
 int main()
 {
-	std::thread thread1(func1);
-	std::thread thread2(func2);
+	{
+		std::thread thread1(func1);
+		std::thread thread2(func2);
 
-	thread1.join();
-	thread2.join();
+		thread1.join();
+		thread2.join();
+	}
 	
-	std::cout << "Singleton : instance1 == instance2 ?";
-	//auto b = &instance1 == &instance2;
+	{
+		IProduct* p1 = Factory::CreateProduct(Type::type1);
+		IProduct* p2 = Factory::CreateProduct(Type::type2);
+	}
 	return 0;
 }
