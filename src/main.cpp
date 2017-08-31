@@ -1,5 +1,6 @@
 #include "Singleton.h"
 #include "Factory.h"
+#include "FactoryMethod.h"
 
 #include <iostream>
 #include <thread>
@@ -24,9 +25,16 @@ int main()
 		thread2.join();
 	}
 	
+   //Factory
 	{
 		IProduct* p1 = Factory::CreateProduct(Type::type1);
 		IProduct* p2 = Factory::CreateProduct(Type::type2);
 	}
+
+   //Factory Method
+   {
+      AbstractFactory* factory = new ConcreateFactory();
+      factory->CreateAndManage();
+   }
 	return 0;
 }
