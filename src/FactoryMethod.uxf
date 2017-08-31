@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>250</y>
+      <w>180</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ConcreateFactory
+--
+-CreateProduct()
+-ManageProduct()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>30</x>
+      <y>350</y>
+      <w>610</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=blue
+
+Purpose : 
+- Defines an interface for creating objects, but let subclasses to decide which class to instantiate
+- Manage created objects
+
+Why : 
+
+How?
+1.
+Client needs a product, but instead of creating it by its self,
+ask the factory method to produce and manage it.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>280</y>
+      <w>200</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+"Creates"</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>290</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Concrete Product</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>140</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt; Interface &gt;&gt;
+Product</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>170</y>
+      <w>110</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>130</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Factory
+--
++CreateAndManage()
+--
+-CreateProduct() = 0
+-ManageProduct() = 0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>210</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+</diagram>

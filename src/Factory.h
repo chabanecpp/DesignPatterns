@@ -1,3 +1,9 @@
+/*
+               Simple Factory
+- Cacher la fabrication des objets
+- La factory offre une méthode statique qui prend comme paramètre le type d'objet à créer et retourne l'objet crée
+- La factory cache la fabrication
+*/
 enum class Type
 {
 	type1,
