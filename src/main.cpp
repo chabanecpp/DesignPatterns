@@ -1,6 +1,7 @@
 #include "Singleton.h"
 #include "Factory.h"
 #include "FactoryMethod.h"
+#include "AbstractFactory.h"
 
 #include <iostream>
 #include <thread>
@@ -35,6 +36,14 @@ int main()
    {
       AbstractFactory* factory = new ConcreateFactory();
       factory->CreateAndManage();
+
+      delete factory;
+      factory = nullptr;
+   }
+
+   //Abstract Factory
+   {
+      IProduit* p = FactoryMaker::GetFactory()->Create();
    }
 	return 0;
 }
