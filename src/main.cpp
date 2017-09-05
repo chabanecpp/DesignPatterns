@@ -2,6 +2,7 @@
 #include "Factory.h"
 #include "FactoryMethod.h"
 #include "AbstractFactory.h"
+#include "Builder.h"
 
 #include <iostream>
 #include <thread>
@@ -44,6 +45,21 @@ int main()
    //Abstract Factory
    {
       IProduit* p = FactoryMaker::GetFactory()->Create();
+   }
+
+   //Builder Factory
+   {
+      Server* s = new Server();
+      BuilderSpecialisation1* builder1 = new BuilderSpecialisation1();
+      BuilderSpecialisation2* builder2 = new BuilderSpecialisation2();
+
+      s->SetBuilder(builder1);
+      s->BuildProduct();
+      ProductToBuild& p1 = s->GetProduct();
+
+      s->SetBuilder(builder2);
+      s->BuildProduct();
+      ProductToBuild& p2 = s->GetProduct();
    }
 	return 0;
 }
