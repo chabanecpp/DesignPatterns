@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>30</x>
+      <y>350</y>
+      <w>480</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=blue
+
+Purpose : Performance when creating complex objects
+Why : sometimes the cost of cloning an object is less then creating from scratch
+
+How?
+- Create an abstract class to clone</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>20</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Client</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>30</y>
+      <w>310</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+"ask of an new object"</panel_attributes>
+    <additional_attributes>160.0;90.0;160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>150</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+"Creates"</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>80</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt; Interface &gt;&gt;
+Product</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>110</y>
+      <w>110</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>20</y>
+      <w>90</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+"uses"</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>230</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>/Prototype/
+--
++virtual Prototype&amp; Clone
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

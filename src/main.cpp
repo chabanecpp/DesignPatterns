@@ -3,6 +3,7 @@
 #include "FactoryMethod.h"
 #include "AbstractFactory.h"
 #include "Builder.h"
+#include "Prototype.h"
 
 #include <iostream>
 #include <thread>
@@ -60,6 +61,12 @@ int main()
       s->SetBuilder(builder2);
       s->BuildProduct();
       ProductToBuild& p2 = s->GetProduct();
+   }
+
+   //Prototype
+   {
+      Prototype& p0 = FactoryPrototype::MakePrototype(0);
+      Prototype& p1 = FactoryPrototype::MakePrototype(1);
    }
 	return 0;
 }
